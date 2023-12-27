@@ -1,0 +1,37 @@
+<html>
+<head>
+    <script>
+function add()
+{
+    var a=parseInt(document.getElementById("first").value);
+    var b=parseInt(document.getElementById("second").value);
+    var c=a+b;
+    document.getElementById("third").value=c;
+}
+function substraction()
+{
+    var x=document.getElementById("fifth").value;
+    var y=document.getElementById("sixth").value;
+    var z=x-y;
+    document.getElementById("FOURTH").value=z;
+}
+    </script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event</title>
+</head>
+<body>
+    <marquee behavior="" direction="down">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Natus accusamus tempore neque nemo voluptatem quia accusantium officia, expedita totam quisquam quos eveniet nam autem sed unde? Eius eos accusantium repudiandae.</marquee>
+    <H1>ADD</H1>
+    <input type="text" placeholder="Enter First Number" name="" id="first">
+    <input type="text" placeholder="Enter Second Number" name="" id="second">
+    <input type="button" value="add" onclick="add()">
+    <input type="text" placeholder="Result" name="c" id="third">
+
+    <h2>substraction</h2>
+    <input type="text" placeholder="Enter First Number" name="" id="fifth">
+    <input type="text" placeholder="Enter Second Number" name="" id="sixth">
+    <input type="button" value="substraction" onclick="substraction()">
+    <input type="text" placeholder="Result" name="z" id="FOURTH">
+</body>
+</html>

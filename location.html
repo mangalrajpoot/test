@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="html">
+<head>
+    <script>
+        function login()
+        {
+            var username=document.getElementById('username').value;
+        var password=document.getElementById('password').value;
+        if(username=='admin' & password=='admin')
+        {  
+            window.location.href="loop2.html";
+        }
+        else
+        {
+            alert("Invalid Username or Password");
+        }
+        }
+    </script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" placeholder="username" name="" id="username">
+    <input type="text" placeholder="password" name="" id="password">
+    <input type="submit" value="Login" onclick="login()">
+    
+</body>
+</html>

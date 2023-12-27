@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="html">
+<head>
+    <style>
+input[type='text']
+{
+width:300px;
+height:70px;
+}
+input[type='button']
+{
+    width: 100px;
+    height:60px;
+    font-size: 30px;
+    font-weight: bolder;
+}
+fieldset 
+{
+    width:310px;
+    background-color: silver;
+}
+
+    </style>
+    <script>
+function calc(x)
+{
+document.getElementById('result').value=document.getElementById('result').value+x;
+}
+function sol()
+{
+    document.getElementById('result').value=eval(document.getElementById('result').value)
+}
+
+    </script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <fieldset>
+    <input type="text" name="" id="result"><br><br>
+    <input type="button" onclick="calc(this.value)" value="1">
+    <input type="button" onclick="calc(this.value)" value="2">
+    <input type="button" onclick="calc(this.value)" value="3"><br>
+    <input type="button" onclick="calc(this.value)" value="4">
+    <input type="button" onclick="calc(this.value)" value="5">
+    <input type="button" onclick="calc(this.value)" value="6"><br>
+    <input type="button" onclick="calc(this.value)" value="7">
+    <input type="button" onclick="calc(this.value)" value="8">
+    <input type="button" onclick="calc(this.value)" value="9"><br>
+    <input type="button" onclick="calc(this.value)" value="0">
+    <input type="button" onclick="calc(this.value)" value="+">
+    <input type="button" onclick="calc(this.value)" value="-"><br>
+    <input type="button" onclick="calc(this.value)" value="*">
+    <input type="button" onclick="calc(this.value)" value="/">
+    <input type="button" onclick="sol()" value="="><br>
+</fieldset>
+</body>
+</html>

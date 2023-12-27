@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="html">
+<head>
+    <style>
+        span 
+        {
+            color:red;
+        }
+    </style>
+    <script>
+function valid()
+{
+var fname=document.getElementById("fname").value;
+if(fname=='')
+{
+document.getElementById("error1").innerHTML="Please Enter Full Name";
+}
+else if(fname>='0' && fname<='9' || fname=='@' || fname=='#' || fname=='!' || fname=='$' || fname=='&' || fname=='%' || fname=='*')
+{
+    document.getElementById("error1").innerHTML="Please Enter Only Alphabet Letters";
+}
+else 
+{
+    document.getElementById("error1").innerHTML="";
+}
+if(!document.getElementById('g').checked)
+{
+    document.getElementById("error2").innerHTML="Please Select Gender";
+}
+else {
+    document.getElementById("error2").innerHTML="";
+}
+if(!document.getElementById('c').checked)
+{
+    document.getElementById("error3").innerHTML="Please Select Course";
+}
+else {
+    document.getElementById("error3").innerHTML="";
+}
+
+var city=document.getElementById("city").value;
+if(city=='')
+{
+    document.getElementById("error4").innerHTML="Please Select City";
+}
+else {
+    document.getElementById("error4").innerHTML="";
+}
+
+}
+
+
+    </script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    Full Name
+    <input type="text" name="" placeholder="Full Name" id="fname"><br>
+    <span id="error1"></span><br>
+    gender
+    <input type="radio" name="s" id="g">Male
+    <input type="radio" name="s" id="g">Female <br>
+    <span id="error2"></span><br>
+    Course 
+    <input type="checkbox" name="" id="c">MERN Stack
+    <input type="checkbox" name="" id="c">Python
+    <input type="checkbox" name="" id="c">Java <br> 
+    <span id="error3"></span><br>
+    City
+    <select name="" id="city">
+        <option value="">Select Your City</option>
+        <option value="Indore">Indore</option>
+        <option value="Bhopal">Bhopal</option>
+        <option value="Ujjain">Ujjain</option>
+        <option value="Dewas">Dewas</option>
+    </select><br>
+    <span id="error4"></span><br>
+
+<input type="button" value="Valid" onclick="valid()">
+
+ 
+    
+</body>
+</html>

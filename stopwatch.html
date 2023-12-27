@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="html">
+<head>
+    <script>
+var h=0;
+var m=0;
+var s=0;
+var c=0;
+var timer=false;
+function stopwatch() {
+
+if(timer==true)
+{
+    c++;
+    if(c==100)
+    {
+        s++;
+        c=0;
+    }
+    if(s==60)
+    {
+        m++;
+        s=0;
+        c=0;
+    }
+    if(m==60)
+    {
+        h++;
+        m=0;
+        s=0;
+        c=0;
+    }
+   
+}
+
+document.getElementById('h').innerHTML=h; 
+document.getElementById('m').innerHTML=m;
+document.getElementById('s').innerHTML=s;
+document.getElementById('c').innerHTML=c;
+
+setTimeout(stopwatch,10)
+
+
+
+}
+function start() {
+    timer=true;
+    stopwatch();
+
+}
+function reset() {
+timer=false;
+h=0;
+m=0;
+s=0;
+c=0;
+document.getElementById('h').innerHTML=h;
+document.getElementById('m').innerHTML=m;
+document.getElementById('s').innerHTML=s;
+document.getElementById('c').innerHTML=c;
+
+}
+function stop()
+{
+timer=false;
+
+
+}
+
+
+
+
+
+    </script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <center>
+        <span id="h">0</span>
+        <span>:</span>
+        <span id="m">0</span>
+        <span>:</span>
+        <span id="s">0</span>
+        <span>:</span>
+        <span id="c">0</span><br>
+        <span></span><br>
+        <input type="button" onclick="start()" value="Start">
+        <input type="button" onclick="reset()" value="Reset">
+        <input type="button" onclick="stop()" value="Stop">
+    </center>
+    
+</body>
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="html">
+<head>
+    <script>
+        document.write('Hello Java Script!');
+        alert('Hello Java Script!');
+        console.log('Hello Java Script!');
+       function add()
+       {
+        var x=parseInt(document.getElementById('first').value);
+        var y=parseInt(document.getElementById('second').value);
+
+        let z=x*y;
+        document.write(z);
+ 
+        
+       }
+
+
+     
+
+       
+    </script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+  <input type="text" placeholder="Enter First Number" name="" id="first"><br>
+  <input type="text" placeholder="Enter Second Number" name="" id="second">
+  <button onclick="add()">Add</button>
+</body>
+</html>

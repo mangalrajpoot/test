@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="html">
+<head>
+    <script>
+function mtk()
+{
+   var a= document.getElementById('k').value;
+   var b=a*1000;
+   document.getElementById('m').value=b;
+}
+function ktm()
+{
+    var a= document.getElementById('m').value;
+    var b=a/1000;
+    document.getElementById('k').value=b;
+}
+    </script>
+   
+</head>
+<body>
+<input type="text" onkeyup="mtk()" placeholder="Enter Distance in Kilometer" name="" id="k">
+<input type="text" onkeyup="ktm()" placeholder="Enter Distance in Meter" name="" id="m">
+    
+</body>
+</html>

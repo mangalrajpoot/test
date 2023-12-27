@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="html">
+<head>
+    <script>
+function validation() {
+    var username=document.getElementById("username").value;
+    var password=document.getElementById("password").value;
+    if(username=="admin" & password=="123456")
+    {
+        window.location.href="https://www.google.com";
+    }
+    else 
+    {
+        alert('Invalid username or password')
+    }
+}
+
+    </script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<form>
+    <input type="text" placeholder="username" name="" id="username"><br>
+    <input type="text" placeholder="password" name="" id="password"><br>
+    <input type="button" onclick="validation()" value="Valid">
+</form>
+</body>
+</html>

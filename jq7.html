@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="html">
+<head>
+    <style>
+        p 
+        {
+            text-align: right;
+            color:yellow;
+            background-color: red;
+        }
+        .test
+        {
+            text-align: left;
+            color:blue;
+            background-color: indigo;
+        }
+    </style>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius, quasi.</p>
+    <button id="btn" class="buttonbtn">Click</button>
+    <script>
+        $(document).ready(function(){
+            $("p").dblclick(function(){
+                $(this).css({
+                    'color':'yellow',
+                    'background-color':'black',
+                    'text-align':'center',
+                });
+                
+            });
+
+            $('p').click( function() {
+    $(this).addClass('test');
+});
+            
+        });
+    </script>
+    
+</body>
+</html>
